@@ -3,8 +3,6 @@
 namespace Concept7\HealthChecks;
 
 use Concept7\HealthChecks\Commands\HealthChecksCommand;
-use Spatie\LaravelPackageTools\Package;
-use Spatie\LaravelPackageTools\PackageServiceProvider;
 use Concept7\HealthChecks\Commands\HealthChecksCommand;
 use Spatie\Health\Checks\Checks\CacheCheck;
 use Spatie\Health\Checks\Checks\DebugModeCheck;
@@ -16,6 +14,8 @@ use Spatie\Health\Checks\Checks\RedisCheck;
 use Spatie\Health\Checks\Checks\RedisMemoryUsageCheck;
 use Spatie\Health\Checks\Checks\ScheduleCheck;
 use Spatie\Health\Facades\Health;
+use Spatie\LaravelPackageTools\Package;
+use Spatie\LaravelPackageTools\PackageServiceProvider;
 use Spatie\SecurityAdvisoriesHealthCheck\SecurityAdvisoriesCheck;
 
 class HealthChecksServiceProvider extends PackageServiceProvider
@@ -35,9 +35,10 @@ class HealthChecksServiceProvider extends PackageServiceProvider
             ->hasCommand(HealthChecksCommand::class);
     }
 
-    public function packageRegistered() {
+    public function packageRegistered()
+    {
         $this->mergeConfigFrom(
-            $this->package->basePath("/../config/health.php"),
+            $this->package->basePath('/../config/health.php'),
             'health'
         );
     }
