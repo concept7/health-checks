@@ -5,6 +5,7 @@ namespace Concept7\HealthChecks\Tests;
 use Concept7\HealthChecks\HealthChecksServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
+use Spatie\Health\HealthServiceProvider;
 
 class TestCase extends Orchestra
 {
@@ -20,17 +21,12 @@ class TestCase extends Orchestra
     protected function getPackageProviders($app)
     {
         return [
+            HealthServiceProvider::class,
             HealthChecksServiceProvider::class,
         ];
     }
 
     public function getEnvironmentSetUp($app)
     {
-        config()->set('database.default', 'testing');
-
-        /*
-        $migration = include __DIR__.'/../database/migrations/create_health-checks_table.php.stub';
-        $migration->up();
-        */
     }
 }
