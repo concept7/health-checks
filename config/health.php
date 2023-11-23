@@ -8,10 +8,7 @@ return [
      * can use multiple stores at the same time.
      */
     'result_stores' => [
-        Spatie\Health\ResultStores\JsonFileHealthResultStore::class => [
-            'disk' => 'local',
-            'path' => 'health.json',
-        ],
+        Spatie\Health\ResultStores\InMemoryHealthResultStore::class,
     ],
 
     /*
