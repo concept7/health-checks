@@ -2,6 +2,29 @@
 
 All notable changes to `health-checks` will be documented in this file.
 
+## Release 1.0.0 - 2025-03-11
+
+### What's Changed
+
+* Bump aglipanci/laravel-pint-action from 2.3.0 to 2.3.1 by @dependabot in https://github.com/concept7/health-checks/pull/2
+* Bump aglipanci/laravel-pint-action from 2.3.1 to 2.4 by @dependabot in https://github.com/concept7/health-checks/pull/5
+* upgrading to support L11 by @mwagena in https://github.com/concept7/health-checks/pull/7
+* Bump ramsey/composer-install from 2 to 3 by @dependabot in https://github.com/concept7/health-checks/pull/3
+* Bump dependabot/fetch-metadata from 1.6.0 to 2.1.0 by @dependabot in https://github.com/concept7/health-checks/pull/6
+* store result in memory by @mwagena in https://github.com/concept7/health-checks/pull/1
+* Bump dependabot/fetch-metadata from 2.1.0 to 2.2.0 by @dependabot in https://github.com/concept7/health-checks/pull/8
+* Bump dependabot/fetch-metadata from 2.2.0 to 2.3.0 by @dependabot in https://github.com/concept7/health-checks/pull/9
+* Bump aglipanci/laravel-pint-action from 2.4 to 2.5 by @dependabot in https://github.com/concept7/health-checks/pull/10
+* Support Laravel 12 & updates by @jhhazelaar in https://github.com/concept7/health-checks/pull/11
+
+### New Contributors
+
+* @dependabot made their first contribution in https://github.com/concept7/health-checks/pull/2
+* @mwagena made their first contribution in https://github.com/concept7/health-checks/pull/7
+* @jhhazelaar made their first contribution in https://github.com/concept7/health-checks/pull/11
+
+**Full Changelog**: https://github.com/concept7/health-checks/compare/v0.0.1...1.0.0
+
 ## 0.1.0 - 2024-05-14
 
 ### What's Changed
