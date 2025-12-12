@@ -2,6 +2,9 @@
 
 namespace Concept7\HealthChecks;
 
+use Concept7\VersionHealthChecks\Checks\LaravelVersionCheck;
+use Concept7\VersionHealthChecks\Checks\PhpVersionCheck;
+use Concept7\VersionHealthChecks\Checks\TailwindVersionCheck;
 use Illuminate\Console\Scheduling\Schedule;
 use Spatie\Health\Checks\Checks\CacheCheck;
 use Spatie\Health\Checks\Checks\DebugModeCheck;
@@ -49,6 +52,9 @@ class HealthChecksServiceProvider extends PackageServiceProvider
             RedisMemoryUsageCheck::new()->failWhenAboveMb(1000),
             ScheduleCheck::new()->heartbeatMaxAgeInMinutes(2),
             SecurityAdvisoriesCheck::new(),
+            LaravelVersionCheck::new(),
+            PhpVersionCheck::new(),
+            TailwindVersionCheck::new(),
         ]);
 
         $this->app->booted(function () {
