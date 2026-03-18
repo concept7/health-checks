@@ -2,6 +2,10 @@
 
 All notable changes to `health-checks` will be documented in this file.
 
+## Release 1.1.1 - 2026-03-18
+
+**Full Changelog**: https://github.com/concept7/health-checks/compare/1.1.0...1.1.1
+
 ## Release 1.1.0 - 2026-03-18
 
 ### What's Changed
