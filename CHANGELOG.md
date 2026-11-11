@@ -2,6 +2,10 @@
 
 All notable changes to `health-checks` will be documented in this file.
 
+## Release 1.2.0 - 2026-11-11
+
+- Remove the security advisories health check: Kite Monitor already tracks Composer advisories, so the check only duplicated those alerts. Drops `spatie/security-advisories-health-check` from the requirements.
+
 ## Release 1.1.1 - 2026-03-18
 
 **Full Changelog**: https://github.com/concept7/health-checks/compare/1.1.0...1.1.1
