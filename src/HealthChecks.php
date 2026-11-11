@@ -2,6 +2,4 @@
 
 namespace Concept7\HealthChecks;
 
-class HealthChecks
-{
-}
+class HealthChecks {}
