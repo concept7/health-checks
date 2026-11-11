@@ -17,7 +17,6 @@ use Spatie\Health\Commands\ScheduleCheckHeartbeatCommand;
 use Spatie\Health\Facades\Health;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Spatie\SecurityAdvisoriesHealthCheck\SecurityAdvisoriesCheck;
 
 class HealthChecksServiceProvider extends PackageServiceProvider
 {
@@ -48,7 +47,6 @@ class HealthChecksServiceProvider extends PackageServiceProvider
             RedisCheck::new(),
             RedisMemoryUsageCheck::new()->failWhenAboveMb(1000),
             ScheduleCheck::new()->heartbeatMaxAgeInMinutes(2),
-            SecurityAdvisoriesCheck::new(),
         ]);
 
         $this->app->booted(function () {
